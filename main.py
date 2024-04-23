@@ -53,7 +53,7 @@ def main():
             username = response.split(':')[1:][0].split('!')[0]
 
             if(username == "sennyk4"):
-                message = response.split(':', 1)[1:][1]
+                message = response.split(':', 2)[1:][1]
                 #print(username)
                 #print(message)
                 client.create_tweet(text = message)
